@@ -1,0 +1,26 @@
+How Memoization Works
+Step 1
+
+Check cache.
+
+cache[input]
+Step 2
+
+If present
+
+return cache[input];
+Step 3
+
+Else calculate
+
+let result = expensiveCalculation();
+Step 4
+
+Store result
+
+cache[input] = result;
+Step 5
+
+Return result
+
+return result;

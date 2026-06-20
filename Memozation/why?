@@ -1,0 +1,34 @@
+Why Was Memoization Created?
+
+Imagine:
+
+function square(num){
+    return num * num;
+}
+
+Calling:
+
+square(5);
+square(5);
+square(5);
+square(5);
+
+calculates every time.
+
+For simple functions it's okay.
+
+But for expensive operations like:
+
+Fibonacci
+Factorial
+API Calls
+Database Queries
+Complex Calculations
+
+recalculating wastes:
+
+CPU
+Time
+Memory
+
+So memoization was introduced.

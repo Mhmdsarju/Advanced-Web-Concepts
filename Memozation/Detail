@@ -1,0 +1,21 @@
+Definition:
+
+Memoization is an optimization technique 
+where we store the result of expensive function calls and return the stored result when the same input occurs again.
+
+
+Simple Idea
+
+Instead of calculating repeatedly:
+
+fib(40)
+fib(40)
+fib(40)
+
+We calculate once and save the answer.
+
+Next time:
+
+fib(40)
+
+returns instantly from memory.
