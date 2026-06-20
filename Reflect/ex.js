@@ -55,17 +55,3 @@ const user=Reflect.construct(Person,["sarju"]);
 
 console.log(user.name)
 
-//proxy+
-
-const user={
-    name:"usermkk"
-}
-
-const proxy=new Proxy(user,{
-    get(target,key){
-        console.log("accessing");
-        return Reflect.get(target,key)
-    }
-})
-
-console.log(proxy.name)
