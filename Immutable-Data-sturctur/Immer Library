@@ -1,0 +1,23 @@
+Why Immer?
+
+Nested updates become ugly.
+
+const updatedUser = {
+    ...user,
+    address: {
+        ...user.address,
+        city: "Delhi"
+    }
+};
+
+For deeper nesting:
+
+user.company.location.city
+
+Code becomes difficult.
+
+Immer lets us write mutable-looking code while keeping data immutable.
+
+Install:
+
+npm install immer

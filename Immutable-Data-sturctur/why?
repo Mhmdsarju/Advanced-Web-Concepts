@@ -1,0 +1,14 @@
+Why was Immutability Created?
+
+Before frameworks like React, developers directly modified objects.
+
+Example:
+
+user.age = 22;
+
+When applications became large:
+
+Hard to track who changed data.
+Bugs became difficult to find.
+Unexpected side effects happened.
+State management became messy.

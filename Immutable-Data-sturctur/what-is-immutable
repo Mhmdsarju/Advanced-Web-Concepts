@@ -1,0 +1,22 @@
+1. What is Immutability?
+
+Immutability means once a value is created, it cannot be changed. Instead of modifying the existing data, we create a new copy with the changes.
+
+Mutable Example ❌
+let user = {
+    name: "Sarju",
+    age: 21
+};
+
+user.age = 22;
+
+console.log(user);
+
+Output:
+
+{
+  name: "Sarju",
+  age: 22
+}
+
+Here the original object itself was modified.

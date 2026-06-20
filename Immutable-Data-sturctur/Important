@@ -1,0 +1,82 @@
+Why is Immutability Important?
+1. Predictable Code
+
+Mutable:
+
+let user = {
+    name: "Sarju"
+};
+
+function updateUser(obj) {
+    obj.name = "Rahul";
+}
+
+updateUser(user);
+
+console.log(user.name);
+
+Output:
+
+Rahul
+
+Function unexpectedly changed original data.
+
+Immutable:
+
+function updateUser(obj) {
+    return {
+        ...obj,
+        name: "Rahul"
+    };
+}
+
+Now original object is safe.
+
+2. Easier Debugging
+
+Mutable data:
+
+user.age = 22;
+user.age = 23;
+user.age = 24;
+
+Difficult to know where change happened.
+
+Immutable:
+
+user1
+user2
+user3
+
+Every version exists separately.
+
+3. React Performance
+
+React compares references.
+
+oldState === newState
+
+If references differ:
+
+React => Re-render
+
+If same:
+
+React => Skip render
+
+That's why React prefers immutable updates.
+
+4. Redux Requirement
+
+Redux state must never be mutated.
+
+Wrong:
+
+state.count++;
+
+Correct:
+
+return {
+    ...state,
+    count: state.count + 1
+};

@@ -1,0 +1,21 @@
+Where Do We Use It?
+React State
+setUsers([...users, newUser]);
+Redux Store
+return {
+    ...state,
+    loading: true
+};
+API Responses
+
+Avoid changing original response.
+
+const updatedData = {
+    ...response,
+    active: true
+};
+Database Records
+const updatedUser = {
+    ...user,
+    city: "Chennai"
+};

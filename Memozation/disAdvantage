@@ -1,0 +1,23 @@
+Disadvantages
+More Memory Usage
+
+Results are stored.
+
+cache = {
+   1: ...
+   2: ...
+   3: ...
+}
+
+Memory grows.
+
+Not Useful for Every Function
+
+Bad example:
+
+Math.random()
+Date.now()
+
+Result changes every time.
+
+Memoization doesn't help.
