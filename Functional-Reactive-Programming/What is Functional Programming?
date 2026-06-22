@@ -1,0 +1,14 @@
+// What is Functional Programming?
+
+// Functional Programming focuses on:
+
+// Pure functions
+// Immutability
+// Declarative style
+// Avoiding side effects
+
+// Example:
+
+// const add = (a, b) => a + b;
+
+// FRP combines this functional style with event streams.

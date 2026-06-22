@@ -1,0 +1,21 @@
+// Why FRP was introduced?
+
+// Before FRP, applications handled events using callbacks.
+
+// Example:
+
+// button.addEventListener("click", () => {
+//     fetchData(() => {
+//         updateUI();
+//     });
+// });
+
+// When applications became larger:
+
+// Too many callbacks
+// Difficult to maintain
+// Callback Hell
+// Complex asynchronous logic
+// Hard to combine multiple events
+
+// FRP was introduced to solve these problems by treating events as streams of data.

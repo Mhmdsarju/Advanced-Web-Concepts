@@ -1,0 +1,9 @@
+Disadvantages of FRP
+
+❌ Initial learning curve is high
+
+❌ Debugging can be difficult
+
+❌ Overkill for very small applications
+
+❌ Extra library size

@@ -1,0 +1,12 @@
+Instead of:
+
+if something happens
+    do this
+
+We write:
+
+When this stream emits data,
+transform it,
+filter it,
+combine it,
+and react to it.

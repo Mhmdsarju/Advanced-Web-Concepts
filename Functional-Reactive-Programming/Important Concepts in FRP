@@ -1,0 +1,113 @@
+// Important Concepts in FRP
+// 1. Observable
+
+// Observable is the heart of RxJS.
+
+// An Observable is a stream that emits values over time.
+
+// Example:
+
+// const stream = [1,2,3];
+
+// But Observable emits values one by one.
+
+// 1 → 2 → 3 → Complete
+
+// Example:
+
+// import { Observable } from 'rxjs';
+
+// const observable = new Observable(subscriber => {
+//     subscriber.next("Hello");
+//     subscriber.next("World");
+//     subscriber.complete();
+// });
+
+// observable.subscribe(data => {
+//     console.log(data);
+// });
+
+// Output:
+
+// Hello
+// World
+// 2. Observer
+
+// Observer receives data from Observable.
+
+// Example:
+
+// observable.subscribe({
+//     next: value => console.log(value),
+//     error: err => console.log(err),
+//     complete: () => console.log("Completed")
+// });
+
+// Methods:
+
+// Method	Purpose
+// next()	Receive value
+// error()	Receive error
+// complete()	Stream finished
+// 3. Subscription
+
+// When we subscribe to an Observable:
+
+// const subscription = observable.subscribe();
+
+// To stop listening:
+
+// subscription.unsubscribe();
+
+// Example:
+
+// setTimeout(() => {
+//     subscription.unsubscribe();
+// }, 5000);
+// 4. Operators
+
+// Operators transform data streams.
+
+// Think of them like:
+
+// Input Stream → Operator → Output Stream
+
+// Common operators:
+
+// Operator	Purpose
+// map()	Transform values
+// filter()	Filter values
+// debounceTime()	Delay events
+// merge()	Combine streams
+// take()	Take limited values
+// switchMap()	Cancel previous requests
+
+// Example:
+
+// import { of } from 'rxjs';
+// import { map } from 'rxjs/operators';
+
+// of(1,2,3,4)
+// .pipe(
+//     map(x => x * 10)
+// )
+// .subscribe(console.log);
+
+// Output:
+
+// 10
+// 20
+// 30
+// 40
+// Observable Lifecycle
+// Create Observable
+//        ↓
+// Subscribe
+//        ↓
+// Emit Values
+//        ↓
+// Process Operators
+//        ↓
+// Complete / Error
+//        ↓
+// Unsubscribe

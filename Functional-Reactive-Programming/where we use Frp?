@@ -1,0 +1,57 @@
+Where do we use FRP?
+
+FRP is heavily used in:
+
+1. Frontend Applications
+React
+Angular
+Vue
+
+Examples:
+
+Search autocomplete
+Form validation
+Infinite scrolling
+Real-time notifications
+2. Real-Time Applications
+
+Examples:
+
+Chat applications
+Live sports scores
+Stock market dashboards
+3. WebSocket Applications
+
+Receiving continuous messages from server.
+
+Example:
+
+Server
+ ↓
+Message 1
+ ↓
+Message 2
+ ↓
+Message 3
+
+Each message becomes a stream event.
+
+4. API Handling
+
+Managing:
+
+Loading state
+Retry logic
+Error handling
+Multiple API calls
+5. IoT Systems
+
+Sensors continuously produce data streams.
+
+Example:
+
+Temperature:
+30°
+31°
+32°
+33°

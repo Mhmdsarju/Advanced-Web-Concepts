@@ -1,0 +1,22 @@
+Introduction
+
+Functional Reactive Programming (FRP) is a programming paradigm used to handle asynchronous data streams and events in a declarative way.
+
+Simply,
+
+FRP = Functional Programming + Reactive Programming
+
+It helps developers easily manage data that changes over time.
+
+Examples of changing data:
+
+Mouse movements
+Button clicks
+Keyboard typing
+API responses
+WebSocket messages
+Timers
+User input fields
+Scroll events
+
+Instead of manually handling every event, FRP allows us to describe how data should react when something changes.

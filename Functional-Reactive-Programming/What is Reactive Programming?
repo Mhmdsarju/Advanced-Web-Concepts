@@ -1,0 +1,17 @@
+Reactive Programming is a programming style where:
+
+The application automatically reacts whenever data changes.
+
+Example:
+
+Suppose a user types:
+
+H
+He
+Hel
+Hell
+Hello
+
+Every keystroke is an event.
+
+Reactive programming continuously listens and reacts to these events.
