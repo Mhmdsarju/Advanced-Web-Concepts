@@ -1,0 +1,50 @@
+Why was WebSocket introduced?
+
+Before WebSockets, web applications mainly used HTTP.
+
+Problem with HTTP
+
+HTTP follows a Request → Response model.
+
+Browser sends a request.
+Server sends a response.
+Connection closes.
+
+Example:
+
+Client ---- Request ----> Server
+Client <--- Response ---- Server
+(Connection Closed)
+
+If the server wants to send new data:
+
+Client must send another request.
+Server cannot send data on its own.
+
+This causes:
+
+More network traffic.
+Increased latency.
+Not suitable for real-time applications.
+Example Problem
+
+Imagine a chat application.
+
+Without WebSockets:
+
+User A sends message.
+User B's browser keeps asking:
+
+"Any new message?"
+"Any new message?"
+"Any new message?"
+
+This is called Polling.
+
+Problems:
+
+Too many unnecessary requests.
+Wastes bandwidth.
+Slow updates.
+
+WebSockets solve this problem.

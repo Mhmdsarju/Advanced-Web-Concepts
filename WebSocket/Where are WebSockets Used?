@@ -1,0 +1,59 @@
+Where are WebSockets Used?
+1. Chat Applications
+
+Examples:
+
+WhatsApp Web
+Messenger
+Slack
+
+Messages appear instantly.
+
+2. Live Notifications
+
+Examples:
+
+Instagram Notifications
+Facebook Notifications
+LinkedIn Alerts
+3. Online Gaming
+
+Multiplayer games need instant updates.
+
+Examples:
+
+Player movements
+Scores
+Game events
+4. Stock Market Applications
+
+Stock prices change every second.
+
+Examples:
+
+NSE
+BSE
+Trading Platforms
+5. Live Sports Score Apps
+
+Example:
+
+Cricket Score Updates
+Football Match Updates
+6. Collaborative Applications
+
+Examples:
+
+Google Docs
+Figma
+
+Multiple users edit simultaneously.
+
+7. IoT Applications
+
+Devices continuously send data.
+
+Examples:
+
+Smart Home Systems
+Temperature Sensors

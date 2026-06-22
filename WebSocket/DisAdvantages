@@ -1,0 +1,9 @@
+Disadvantages of WebSockets
+
+❌ More complex than HTTP
+
+❌ Requires persistent server resources
+
+❌ Not ideal for simple applications
+
+❌ Some proxies/firewalls may block connections

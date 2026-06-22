@@ -1,0 +1,29 @@
+Why Use WebSockets?
+1. Real-Time Communication
+
+Data reaches users immediately.
+
+Example:
+
+User A: Hello
+User B receives instantly.
+2. Persistent Connection
+
+Connection stays open.
+
+No need to reconnect repeatedly.
+
+3. Lower Latency
+
+Messages travel faster because:
+
+No repeated HTTP handshakes.
+No repeated TCP connections.
+4. Less Network Overhead
+
+Only one connection is maintained.
+
+Hence:
+
+Less bandwidth usage.
+Better performance.

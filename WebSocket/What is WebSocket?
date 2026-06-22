@@ -1,0 +1,8 @@
+WebSockets
+What is a WebSocket?
+
+A WebSocket is a communication protocol that enables full-duplex, real-time communication between a client (browser) and a server over a single persistent connection.
+
+In simple words:
+
+WebSocket allows the browser and server to send messages to each other instantly without repeatedly making new HTTP requests.

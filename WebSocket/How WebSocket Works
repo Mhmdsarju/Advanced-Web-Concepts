@@ -1,0 +1,49 @@
+ How WebSocket Works
+Step 1: Client sends HTTP Upgrade Request
+
+Initially, communication starts as HTTP.
+
+GET /chat HTTP/1.1
+Host: example.com
+Upgrade: websocket
+Connection: Upgrade
+
+Client requests:
+
+"Please upgrade this HTTP connection to WebSocket."
+
+Step 2: Server accepts
+
+Server responds:
+
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+
+Connection gets upgraded.
+
+Step 3: Persistent Connection Created
+
+Now both client and server remain connected continuously.
+
+Client <===================> Server
+
+No repeated requests are required.
+
+Full Duplex Communication
+
+WebSocket supports Full Duplex Communication.
+
+Meaning:
+
+Client can send data anytime.
+Server can send data anytime.
+
+Both can communicate simultaneously.
+
+Client <--------> Server
+
+Unlike HTTP:
+
+Client ------> Server
+Client <------ Server

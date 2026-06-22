@@ -1,0 +1,20 @@
+//  WebSocket Lifecycle
+// 1. Connection Open
+
+// Client connects.
+
+// const socket = new WebSocket("ws://localhost:3000");
+// 2. Message Exchange
+
+// Client sends:
+
+// socket.send("Hello Server");
+
+// Server sends:
+
+// socket.send("Hello Client");
+// 3. Connection Close
+
+// Either client or server closes:
+
+// socket.close();
