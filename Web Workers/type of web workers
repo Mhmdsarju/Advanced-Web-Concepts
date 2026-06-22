@@ -1,0 +1,29 @@
+Types of Web Workers
+1. Dedicated Worker
+
+Used by a single script or page.
+
+const worker = new Worker("worker.js");
+
+Most commonly used.
+
+2. Shared Worker
+
+Can be shared between multiple tabs or windows.
+
+const worker = new SharedWorker("worker.js");
+
+Useful for:
+
+Shared state
+Cross-tab communication
+3. Service Worker
+
+Runs in the background and handles network-related tasks.
+
+Common uses:
+
+Progressive Web Apps (PWA)
+Offline support
+Push notifications
+Caching

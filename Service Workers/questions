@@ -1,0 +1,20 @@
+Interview Questions
+1. What is a Service Worker?
+
+A background JavaScript file that intercepts network requests and enables offline capabilities.
+
+2. What are the phases of the Service Worker lifecycle?
+Register
+Install
+Activate
+3. What is the purpose of the fetch event?
+
+To intercept network requests and provide custom responses.
+
+4. Why is caching important?
+
+It improves performance and enables offline functionality.
+
+5. What is an Offline-First application?
+
+An application designed to work even without internet connectivity.

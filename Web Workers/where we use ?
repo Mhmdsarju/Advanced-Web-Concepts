@@ -1,0 +1,16 @@
+Where Do We Use Web Workers?
+Data Processing
+     1 Million Records Filter
+CSV Parsing
+    Large CSV File
+AI Calculations
+    Face Detection
+Image Editing
+    Photoshop-like Apps
+Crypto Operations
+    Hashing
+    Encryption
+Games
+    Game Physics Calculation
+Scientific Calculations
+    Matrix Operations

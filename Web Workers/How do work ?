@@ -1,0 +1,28 @@
+How Do Web Workers Work?
+
+The main thread and worker thread cannot directly access each other's variables.
+
+They communicate using messages.
+
+Methods used:
+
+postMessage()
+
+and
+
+onmessage
+
+Communication flow:
+
+Main Thread
+      |
+      | postMessage()
+      v
+Worker Thread
+      |
+      | Process Data
+      v
+postMessage()
+      |
+      v
+Main Thread

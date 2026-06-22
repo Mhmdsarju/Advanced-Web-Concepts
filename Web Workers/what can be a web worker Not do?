@@ -1,0 +1,25 @@
+What Can a Web Worker NOT Do?
+
+Workers do not have access to the DOM.
+
+The following are unavailable:
+
+window
+document
+localStorage
+sessionStorage
+alert
+confirm
+prompt
+
+Example:
+
+document.getElementById("btn");
+
+This will throw an error inside a worker.
+
+Reason
+
+If multiple threads modified the DOM simultaneously, it could create race conditions and inconsistent UI states.
+
+Therefore, only the main thread can access the DOM.

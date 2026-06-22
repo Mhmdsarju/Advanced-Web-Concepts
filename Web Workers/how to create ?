@@ -1,0 +1,35 @@
+How to Create a Web Worker
+Step 1: Create worker.js
+self.onmessage = function (event) {
+  const result = event.data * 2;
+
+  self.postMessage(result);
+};
+Step 2: Create main.js
+const worker = new Worker("worker.js");
+
+worker.postMessage(10);
+
+worker.onmessage = function (event) {
+  console.log(event.data);
+};
+
+Output:
+
+20
+Important Web Worker APIs
+Creating a Worker
+const worker = new Worker("worker.js");
+
+Creates a new background thread.
+
+Sending Data to Worker
+worker.postMessage(data);
+Receiving Data from Worker
+worker.onmessage = (event) => {
+  console.log(event.data);
+};
+Terminating a Worker
+worker.terminate();
+
+Stops the worker immediately.

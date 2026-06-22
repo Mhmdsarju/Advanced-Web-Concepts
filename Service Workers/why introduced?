@@ -1,0 +1,20 @@
+Why were Service Workers introduced?
+
+Before Service Workers:
+
+❌ Websites completely stopped working without internet.
+
+❌ No background processing.
+
+❌ No efficient caching mechanism.
+
+❌ No push notifications in web applications.
+
+Modern web applications needed:
+
+Offline support.
+Faster loading.
+Better user experience.
+Native app-like behavior.
+
+To solve these problems, browsers introduced Service Workers.

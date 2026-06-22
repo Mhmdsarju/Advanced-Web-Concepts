@@ -1,0 +1,18 @@
+Where do we use Service Workers?
+
+Service Workers are commonly used in:
+
+Application.           Usage
+E-commerce.            websites	Offline browsing
+News websites	       Cache articles
+Social media apps	   Faster loading
+Banking apps	       Limited offline support
+Food delivery apps	   Cache UI resources
+Progressive Web Apps (PWA)	Full offline experience
+
+Examples:
+
+Google Maps
+Twitter Lite
+Pinterest
+Starbucks PWA

@@ -1,0 +1,98 @@
+// 1) Registration Phase
+
+// The browser registers the Service Worker.
+
+// Main file:
+
+// if ("serviceWorker" in navigator) {
+//     navigator.serviceWorker
+//         .register("/sw.js")
+//         .then(() => {
+//             console.log("Service Worker Registered");
+//         })
+//         .catch((error) => {
+//             console.log(error);
+//         });
+// }
+// What happens?
+// Browser downloads sw.js.
+// Browser checks validity.
+// Service Worker gets registered.
+
+// //2
+
+// 2) Install Phase
+
+// This event occurs only once (or when the worker updates).
+
+// Purpose:
+
+// ✅ Cache essential files.
+
+// Example:
+
+// self.addEventListener("install", event => {
+
+//     event.waitUntil(
+//         caches.open("v1").then(cache => {
+//             return cache.addAll([
+//                 "/",
+//                 "/index.html",
+//                 "/style.css",
+//                 "/app.js",
+//                 "/offline.html"
+//             ]);
+//         })
+//     );
+
+// });
+// Why cache during install?
+
+// Because important files should be available offline.
+
+// //3
+
+// 3) Activate Phase
+
+// After installation, activation occurs.
+
+// Purpose:
+
+// Remove old caches.
+// Take control of pages.
+
+// Example:
+
+// self.addEventListener("activate", event => {
+
+//     event.waitUntil(
+//         caches.keys().then(cacheNames => {
+
+//             return Promise.all(
+//                 cacheNames.map(cache => {
+
+//                     if (cache !== "v2") {
+//                         return caches.delete(cache);
+//                     }
+
+//                 })
+//             );
+
+//         })
+//     );
+
+// });
+
+// Why remove old cache?
+
+// Suppose:
+
+// Old cache → v1
+// New cache → v2
+
+// If old cache remains:
+
+// Unnecessary storage usage.
+// Users may see outdated content.
+
+// Hence old caches are deleted.

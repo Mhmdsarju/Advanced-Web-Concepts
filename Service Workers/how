@@ -1,0 +1,15 @@
+How does a Service Worker work?
+
+User opens Website
+         ↓
+Browser loads Page
+         ↓
+Service Worker is Registered
+         ↓
+Service Worker gets Installed
+         ↓
+Files are Cached
+         ↓
+Future Requests pass through Service Worker
+         ↓
+Response comes from Cache or Network

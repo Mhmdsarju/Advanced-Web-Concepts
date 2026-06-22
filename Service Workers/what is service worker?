@@ -1,0 +1,14 @@
+What is a Service Worker?
+
+A Service Worker is a JavaScript file that runs separately from the main browser thread and acts as a proxy between the browser and the network.
+
+It can:
+
+Cache files and resources.
+Work even when the internet is unavailable.
+Handle network requests.
+Enable offline functionality.
+Support push notifications.
+Perform background synchronization.
+
+A Service Worker runs in the background, independent of the web page.

@@ -1,0 +1,16 @@
+Advantages of Web Workers
+Better User Experience
+
+UI remains responsive.
+
+Improved Performance
+
+Heavy tasks don't block the main thread.
+
+Parallel Processing
+
+Background work happens independently.
+
+Scalability
+
+Large computations can be handled efficiently.

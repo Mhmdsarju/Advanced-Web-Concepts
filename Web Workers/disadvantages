@@ -1,0 +1,14 @@
+Disadvantages of Web Workers
+Additional Memory Usage
+
+Each worker consumes system resources.
+
+No DOM Access
+
+Workers cannot update UI directly.
+
+Communication Overhead
+
+Data must be passed using messages.
+
+Large data transfers can impact performance.

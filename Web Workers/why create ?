@@ -1,0 +1,18 @@
+Why Were Web Workers Introduced?
+
+Before Web Workers, all JavaScript code ran on the main thread.
+
+Example:
+
+for (let i = 0; i < 10000000000; i++) {
+  // Heavy computation
+}
+
+While this loop runs:
+
+Buttons stop responding
+Scrolling becomes impossible
+Animations freeze
+The browser may show "Page Unresponsive"
+
+To prevent this, Web Workers were introduced so that CPU-intensive tasks could run in the background without affecting the user interface.

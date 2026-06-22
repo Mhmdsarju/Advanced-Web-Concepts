@@ -1,0 +1,40 @@
+Why do we use Service Workers?
+1. Offline Support
+
+Users can continue using the application even without internet.
+
+Example:
+
+Gmail offline mode.
+Notes applications.
+News applications.
+2. Faster Loading
+
+Resources are loaded from cache instead of downloading every time.
+
+Example:
+
+First Visit:
+Browser → Network → Download files
+
+Second Visit:
+Browser → Cache → Instant loading
+3. Reduced Network Usage
+
+Files like CSS, JS, images are stored locally.
+
+Less data usage.
+
+4. Improved User Experience
+
+Applications become faster and more responsive.
+
+5. Native App-like Features
+
+Web apps can behave like mobile applications.
+
+Examples:
+
+Push Notifications
+Background Sync
+Installable Web Apps (PWA)
