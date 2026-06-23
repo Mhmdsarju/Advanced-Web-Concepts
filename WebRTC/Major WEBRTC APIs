@@ -1,42 +1,42 @@
-1) getUserMedia()
+// 1) getUserMedia()
 
-Used to access:
+// Used to access:
 
-Camera
-Microphone
+// Camera
+// Microphone
 
-Example:
+// Example:
 
-navigator.mediaDevices.getUserMedia({
-    video: true,
-    audio: true
-});
-2) RTCPeerConnection
+// navigator.mediaDevices.getUserMedia({
+//     video: true,
+//     audio: true
+// });
+// 2) RTCPeerConnection
 
-Used to establish and manage peer connections.
+// Used to establish and manage peer connections.
 
-Example:
+// Example:
 
-const peer = new RTCPeerConnection();
+// const peer = new RTCPeerConnection();
 
-Responsibilities:
+// Responsibilities:
 
-Connection management
-Media transmission
-Network negotiation
-Encryption
-3) RTCDataChannel
+// Connection management
+// Media transmission
+// Network negotiation
+// Encryption
+// 3) RTCDataChannel
 
-Used for direct data transfer.
+// Used for direct data transfer.
 
-Example:
+// Example:
 
-const channel =
-peer.createDataChannel("chat");
+// const channel =
+// peer.createDataChannel("chat");
 
-Can transfer:
+// Can transfer:
 
-Text messages
-Files
-Game data
-JSON objects
+// Text messages
+// Files
+// Game data
+// JSON objects
