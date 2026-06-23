@@ -1,0 +1,31 @@
+STUN Server
+
+STUN stands for:
+
+Session Traversal Utilities for NAT
+
+Purpose:
+
+Discover the device's public IP address.
+
+Example configuration:
+
+const peer = new RTCPeerConnection({
+    iceServers: [
+        {
+            urls: "stun:stun.l.google.com:19302"
+        }
+    ]
+});
+
+Flow:
+
+Browser
+   |
+   | "What is my public IP?"
+   |
+STUN Server
+   |
+   | "Your public IP is 45.100.20.15"
+   |
+Browser

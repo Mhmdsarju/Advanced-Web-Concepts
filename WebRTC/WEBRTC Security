@@ -1,0 +1,14 @@
+WebRTC Security
+
+Security is built into WebRTC by default.
+
+WebRTC uses:
+
+DTLS (Datagram Transport Layer Security)
+SRTP (Secure Real-time Transport Protocol)
+
+Therefore:
+
+✅ Audio is encrypted.
+✅ Video is encrypted.
+✅ Data channels are encrypted.

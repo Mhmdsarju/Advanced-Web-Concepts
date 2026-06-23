@@ -1,0 +1,23 @@
+What is NAT?
+
+Most devices are behind routers.
+
+Example:
+
+Laptop -> 192.168.1.10
+Phone   -> 192.168.1.11
+TV      -> 192.168.1.12
+
+These private IP addresses are not directly accessible from the internet.
+
+Routers use:
+
+NAT (Network Address Translation)
+
+NAT often prevents direct peer communication.
+
+WebRTC solves this using:
+
+STUN
+TURN
+ICE

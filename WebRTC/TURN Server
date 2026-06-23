@@ -1,0 +1,21 @@
+TURN Server
+
+TURN stands for:
+
+Traversal Using Relays around NAT
+
+Sometimes direct P2P communication fails because of:
+
+Strict firewalls
+Enterprise networks
+Symmetric NAT
+
+In such cases, TURN servers relay all communication.
+
+Peer A
+   |
+TURN Server
+   |
+Peer B
+
+The server forwards all traffic.

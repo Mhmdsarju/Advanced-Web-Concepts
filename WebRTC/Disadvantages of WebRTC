@@ -1,0 +1,11 @@
+Disadvantages of WebRTC
+
+❌ Complex setup
+
+❌ Requires signaling server
+
+❌ NAT traversal challenges
+
+❌ TURN servers increase cost
+
+❌ Browser compatibility differences

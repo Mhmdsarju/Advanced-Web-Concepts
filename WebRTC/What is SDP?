@@ -1,0 +1,20 @@
+What is SDP?
+
+SDP stands for:
+
+Session Description Protocol
+
+It describes:
+
+Media types
+Codecs
+Audio/video formats
+Network information
+
+Example:
+
+Audio codec: Opus
+Video codec: VP8
+Media type: Video
+
+SDP information is exchanged through offers and answers.

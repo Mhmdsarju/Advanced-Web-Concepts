@@ -1,0 +1,28 @@
+Frequently Asked Interview Questions
+1. What is WebRTC?
+
+WebRTC is a technology that enables real-time peer-to-peer audio, video, and data communication between browsers and applications.
+
+2. Why is a signaling server required?
+
+To exchange offers, answers, and ICE candidates before establishing a direct connection.
+
+3. What is the purpose of a STUN server?
+
+To discover the public IP address and help establish direct peer-to-peer communication.
+
+4. What is a TURN server?
+
+A relay server used when direct peer communication cannot be established.
+
+5. What are the main APIs of WebRTC?
+getUserMedia()
+RTCPeerConnection
+RTCDataChannel
+6. Is WebRTC secure?
+
+Yes. WebRTC encrypts audio, video, and data using DTLS and SRTP.
+
+7. Does WebRTC always create direct connections?
+
+No. If direct connections fail, WebRTC uses a TURN server to relay communication.
