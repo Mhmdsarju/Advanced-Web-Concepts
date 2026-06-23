@@ -1,0 +1,50 @@
+How WebAssembly Works
+Step 1
+
+Write code in another language.
+
+Example:
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+↓
+
+Step 2
+
+Compile into WASM.
+
+multiply.cpp
+      ↓
+Compiler
+      ↓
+multiply.wasm
+
+↓
+
+Step 3
+
+Load in browser.
+
+JavaScript loads the .wasm file.
+
+↓
+
+Step 4
+
+Execute.
+
+Browser runs it efficiently.
+
+Complete Flow
+
+C/C++/Rust Code
+        ↓
+Compiler
+        ↓
+WebAssembly Binary (.wasm)
+        ↓
+Browser
+        ↓
+Execute

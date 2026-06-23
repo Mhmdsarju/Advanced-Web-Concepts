@@ -1,0 +1,14 @@
+What is WASI?
+
+WASI = WebAssembly System Interface
+
+Provides system access for WASM programs.
+
+Example:
+
+File Access
+Sockets
+Clocks
+Environment Variables
+
+This allows WASM to run outside browsers.

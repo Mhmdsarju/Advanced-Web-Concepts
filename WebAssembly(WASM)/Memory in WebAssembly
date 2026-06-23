@@ -1,0 +1,27 @@
+Memory in WebAssembly
+
+WASM uses:
+
+Linear Memory
+
+Imagine:
+
++----------------+
+| Byte 0         |
+| Byte 1         |
+| Byte 2         |
+| Byte 3         |
+| ...            |
++----------------+
+
+Memory is represented as:
+
+ArrayBuffer
+
+JavaScript can access it.
+
+Example:
+
+const memory = new WebAssembly.Memory({
+    initial: 10
+});

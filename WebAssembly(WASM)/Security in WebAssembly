@@ -1,0 +1,22 @@
+Security in WebAssembly
+
+WebAssembly runs inside a sandbox.
+
+Meaning:
+
+❌ Cannot directly:
+
+Access files
+Access OS
+Access hardware
+Access network freely
+
+It must use browser APIs.
+
+Example:
+
+WASM
+   ↓
+JavaScript
+   ↓
+Browser API

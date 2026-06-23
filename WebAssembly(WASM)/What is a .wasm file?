@@ -1,0 +1,12 @@
+A .wasm file is:
+
+Binary format
+Compact
+Fast to download
+Fast to parse
+
+Example:
+
+math.wasm
+game.wasm
+editor.wasm

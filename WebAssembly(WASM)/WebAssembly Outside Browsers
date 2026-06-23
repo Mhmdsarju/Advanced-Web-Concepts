@@ -1,0 +1,23 @@
+WebAssembly Outside Browsers
+
+WASM is not limited to browsers.
+
+It can run on:
+
+Servers
+Edge computing
+IoT devices
+Cloud environments
+
+Examples:
+
+WASI (WebAssembly System Interface)
+Serverless platforms
+
+Architecture:
+
+Application
+     ↓
+WASM Runtime
+     ↓
+Server/Cloud

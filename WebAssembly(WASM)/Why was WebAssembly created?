@@ -1,0 +1,27 @@
+Why was WebAssembly created?
+
+JavaScript is powerful but has limitations.
+
+Problems:
+
+CPU-intensive tasks become slow.
+Large calculations affect UI responsiveness.
+Games and video editing applications need more performance.
+Existing C/C++ applications could not directly run in browsers.
+
+Example:
+
+Imagine building:
+
+Photoshop in browser
+3D games
+CAD software
+Video editors
+
+JavaScript alone may struggle.
+
+So browsers introduced WebAssembly.
+
+Goal:
+
+"Bring desktop-level performance to the web."

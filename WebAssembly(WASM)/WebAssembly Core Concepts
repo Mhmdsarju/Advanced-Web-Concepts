@@ -1,0 +1,48 @@
+WebAssembly Core Concepts
+1. Module
+
+Compiled WASM code.
+
+calculator.wasm
+
+Contains:
+
+Functions
+Memory
+Tables
+Globals
+2. Instance
+
+Running copy of a module.
+
+const instance = result.instance;
+3. Exports
+
+Functions exposed to JavaScript.
+
+Example:
+
+int add(int a, int b);
+
+JavaScript:
+
+instance.exports.add()
+4. Imports
+
+JavaScript functions provided to WASM.
+
+Example:
+
+function log(x) {
+   console.log(x);
+}
+
+WASM can call this.
+
+5. Memory
+
+Linear memory used by WASM.
+
+new WebAssembly.Memory({
+    initial: 1
+});

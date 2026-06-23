@@ -1,0 +1,60 @@
+Where is WebAssembly Used?
+1. Browser Games 🎮
+
+Large games need speed.
+
+Examples:
+
+Unity games
+Unreal Engine games
+2. Video Editing 🎬
+
+Examples:
+
+Browser video editors
+Encoding/decoding videos
+3. Image Processing 🖼️
+
+Tasks:
+
+Filters
+Resizing
+Compression
+4. CAD Applications
+
+Engineering software.
+
+Example:
+
+3D modeling tools
+5. Audio Processing 🎵
+
+Real-time audio effects.
+
+6. Scientific Computing 🧪
+
+Heavy calculations.
+
+7. Machine Learning 🤖
+
+Running AI models inside browser.
+
+Examples:
+
+Image recognition
+Speech recognition
+8. Cryptography 🔒
+
+Encryption algorithms.
+
+9. PDF Processing
+
+Fast PDF generation and rendering.
+
+10. Emulators
+
+Running old systems inside browser.
+
+Example:
+
+Retro console emulators

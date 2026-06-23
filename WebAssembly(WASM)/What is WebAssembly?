@@ -1,0 +1,23 @@
+What is WebAssembly?
+
+WebAssembly (WASM) is a low-level binary instruction format that allows programs written in languages like C, C++, Rust, Go, C#, etc., to run inside web browsers at near-native speed.
+
+Simply,
+
+WebAssembly is a technology that allows high-performance applications to run on the web.
+
+It works alongside JavaScript.
+
+Simple Definition
+
+Before WebAssembly:
+
+Browser → JavaScript → Execute
+
+After WebAssembly:
+
+Browser
+   ├── JavaScript
+   └── WebAssembly
+
+Both run inside the browser.

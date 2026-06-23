@@ -1,0 +1,27 @@
+When Should You Use WebAssembly?
+
+Use WASM when:
+
+✅ Heavy calculations
+
+✅ Video editing
+
+✅ 3D rendering
+
+✅ Image processing
+
+✅ Games
+
+✅ AI/ML
+
+✅ Existing C/C++ libraries
+
+Avoid WASM when:
+
+❌ Simple forms
+
+❌ CRUD applications
+
+❌ Normal websites
+
+❌ DOM-heavy applications
