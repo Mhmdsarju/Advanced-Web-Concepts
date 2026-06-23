@@ -1,0 +1,20 @@
+Traditional Client-Server Communication
+
+Browser A
+    |
+    |
+ Server
+    |
+    |
+Browser B
+
+All communication passes through a server.
+
+WebRTC Communication
+
+Browser A <-------------> Browser B
+          Direct Connection
+
+Browsers communicate directly.
+
+This is called:

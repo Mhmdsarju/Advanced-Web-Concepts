@@ -1,0 +1,169 @@
+// Step 1: Access User Media
+
+// First, browsers need access to the camera and microphone.
+
+// navigator.mediaDevices.getUserMedia({
+//     video: true,
+//     audio: true
+// })
+// .then(stream => {
+//     localVideo.srcObject = stream;
+// });
+
+// The browser asks permission:
+
+// Allow Camera?
+// Allow Microphone?
+
+// After permission is granted, media streams become available.
+
+// Step 2: Create a Peer Connection
+
+// Each browser creates a connection object.
+
+// const peerConnection = new RTCPeerConnection();
+
+// This object manages:
+
+// Audio streams
+// Video streams
+// Network connections
+// Encryption
+// Media transmission
+// Step 3: Signaling
+
+// WebRTC itself does not provide signaling.
+
+// A separate signaling mechanism is needed to exchange connection information between peers.
+
+// Common technologies used for signaling:
+
+// WebSocket
+// Socket.IO
+// Firebase
+// MQTT
+// Why is Signaling Needed?
+
+// Before establishing a direct connection, peers must exchange information such as:
+
+// Session descriptions
+// Network details
+// ICE candidates
+
+// Example:
+
+// Browser A:
+// "I want to start a call."
+
+// Browser B:
+// "Okay, here is my connection information."
+// Step 4: Offer and Answer Exchange
+
+// WebRTC uses the Offer/Answer model.
+
+// Caller Creates an Offer
+// const offer = await peerConnection.createOffer();
+
+// await peerConnection.setLocalDescription(offer);
+
+// The offer is sent to the other peer using the signaling server.
+
+// Receiver Creates an Answer
+// await peerConnection.setRemoteDescription(offer);
+
+// const answer = await peerConnection.createAnswer();
+
+// await peerConnection.setLocalDescription(answer);
+
+// The answer is then sent back.
+
+// Complete Offer/Answer Flow
+// Peer A
+//    |
+// Create Offer
+//    |
+//    v
+// Signaling Server
+//    |
+//    v
+// Peer B
+
+// Peer B
+//    |
+// Create Answer
+//    |
+//    v
+// Signaling Server
+//    |
+//    v
+// Peer A
+// Step 5: ICE Candidate Exchange
+
+// Even after exchanging offers and answers, browsers still need network information to establish a direct connection.
+
+// This is handled using ICE (Interactive Connectivity Establishment).
+
+// Example:
+
+// peerConnection.onicecandidate = event => {
+//     if (event.candidate) {
+//         socket.emit("candidate", event.candidate);
+//     }
+// };
+
+// ICE candidates contain:
+
+// Public IP addresses
+// Private IP addresses
+// Port numbers
+// Step 6: Direct Peer-to-Peer Connection
+
+// Once ICE negotiation succeeds:
+
+// Browser A <----------------> Browser B
+
+// Audio, video, and data can now flow directly.
+
+// Major WebRTC APIs
+// 1) getUserMedia()
+
+// Used to access:
+
+// Camera
+// Microphone
+
+// Example:
+
+// navigator.mediaDevices.getUserMedia({
+//     video: true,
+//     audio: true
+// });
+// 2) RTCPeerConnection
+
+// Used to establish and manage peer connections.
+
+// Example:
+
+// const peer = new RTCPeerConnection();
+
+// Responsibilities:
+
+// Connection management
+// Media transmission
+// Network negotiation
+// Encryption
+// 3) RTCDataChannel
+
+// Used for direct data transfer.
+
+// Example:
+
+// const channel =
+// peer.createDataChannel("chat");
+
+// Can transfer:
+
+// Text messages
+// Files
+// Game data
+// // JSON objects

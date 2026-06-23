@@ -1,0 +1,14 @@
+Before WebRTC existed:
+
+Video calling in browsers required plugins like Flash or Java Applets.
+Applications such as Skype required separate software installation.
+Plugins introduced security risks and compatibility issues.
+
+To solve these problems, companies like Google, Mozilla, and Opera developed WebRTC.
+
+The main goals were:
+
+✅ Plugin-free communication
+✅ Secure communication
+✅ Low-latency real-time communication
+✅ Cross-browser support
